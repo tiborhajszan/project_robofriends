@@ -1,22 +1,23 @@
 // Zero To Mastery Academy
 // Complete Web Developer in 2025: Zero to Mastery
-// React :: RoboFriends Project :: Card Component
+// React :: RoboFriends Project :: Card List Component
 
 // imports -------------------------------------------------------------------------------------------------------------
 
 import React from "react";
+import Card from "./Card.js";
 
-// card component class ################################################################################################
-class Card extends React.Component {
+// card list component class ###########################################################################################
+class CardList extends React.Component {
   
   // render method -----------------------------------------------------------------------------------------------------
   render() {
     return (
-      <div className="dib w-20 ma2 bw2 br3 pa3 bg-light-green tc shadow-5 grow">
-        <img src={ `https://robohash.org/${ this.props.id }?size=200x200` } alt="Robot Pic" />
-        <h2>{ this.props.name }</h2>
-        <p>{ this.props.email }</p>
-      </div>
+      <div>{
+        this.props.robots.map(
+          user => {return <Card key={user.id} id={user.id} name={user.name} email={user.email} />}
+        )
+      }</div>
     );
   }
 
@@ -24,4 +25,4 @@ class Card extends React.Component {
 
 // exports #############################################################################################################
 
-export default Card;
+export default CardList;
