@@ -6,19 +6,18 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { robots } from "./robots.js";
 import "./index.css";
 import Hello from "./Hello.js";
-import CardList from "./CardList.js";
+import App from "./App.js";
 import "tachyons";
 import reportWebVitals from "./reportWebVitals";
 
-// rendering root component --------------------------------------------------------------------------------------------
+// rendering home page -------------------------------------------------------------------------------------------------
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Hello greeting={"Hello React Ninja!"} />
-    <CardList robots={robots} />
+    <App />
   </React.StrictMode>
 );
 
