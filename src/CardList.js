@@ -5,7 +5,7 @@
 // imports -------------------------------------------------------------------------------------------------------------
 
 import React from "react";
-import Card from "./Card.js";
+import Card from "./components/Card.js";
 
 // card list component class ###########################################################################################
 class CardList extends React.Component {
