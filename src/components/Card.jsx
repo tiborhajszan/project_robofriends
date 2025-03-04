@@ -5,15 +5,16 @@
 // imports -------------------------------------------------------------------------------------------------------------
 
 import React from "react";
+import "./Card.css";
 
 // card component function #############################################################################################
 
-function Card (props) {
+function Card(props) {
   return (
-    <div className="dib ma2 bw2 br3 pa3 bg-light-green tc shadow-5 grow">
+    <div className="card bg-light-green shadow-5 grow">
       <img src={`https://robohash.org/${props.id}?size=200x200`} alt={props.name} />
-      <h2>{props.name}</h2>
-      <p>{props.email}</p>
+      <h2 className="tc">{props.name}</h2>
+      <p className="tc">{props.email}</p>
     </div>
   );
 }

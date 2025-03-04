@@ -1,0 +1,16 @@
+/*
+Zero To Mastery Academy
+Complete Web Developer in 2025: Zero to Mastery
+React :: RoboFriends Project :: Card Css
+*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  margin: 0 10px 20px;
+  border-radius: 10px;
+  padding: 20px;
+}

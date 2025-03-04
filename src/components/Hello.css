@@ -1,0 +1,17 @@
+/*
+Zero To Mastery Academy
+Complete Web Developer in 2025: Zero to Mastery
+React :: RoboFriends Project :: Hello Css
+*/
+
+.hello {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: steelblue;
+  font: 2em;
+  text-align: center;
+}
+
+.h1 {
+  color: white;
+}
