@@ -4,8 +4,10 @@ Complete Web Developer in 2025: Zero to Mastery
 React :: RoboFriends Project :: Application Page Css
 */
 
-body {
+html {
   margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, rgba(0, 128, 128, 1.0) 0%, rgba(7, 27, 82, 1.0) 100%);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

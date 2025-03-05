@@ -35,7 +35,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Hello title={"Hello React Ninja"} />
+        <Hello title={"RoboFriends"} />
         <SearchBox changeHandler={this.onSearchChange} />
         <CardList robots={this.state.filteredRobots} />
       </div>
