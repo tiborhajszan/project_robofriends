@@ -18,7 +18,7 @@ class App extends React.Component {
 
   constructor() {
     super();
-    this.state = {filteredRobots: robots}
+    this.state = {filteredRobots: []}
     this.onSearchChange = this.onSearchChange.bind(this);
   }
 
@@ -33,14 +33,33 @@ class App extends React.Component {
   // render method -----------------------------------------------------------------------------------------------------
 
   render() {
-    return (
-      <div>
-        <Hello title={"RoboFriends"} />
-        <SearchBox changeHandler={this.onSearchChange} />
-        <CardList robots={this.state.filteredRobots} />
-      </div>
-    );
+    if (this.state.filteredRobots.length === 0) {
+      return (
+        <div>
+          <Hello title={"Loading..."} />
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <Hello title={"RoboFriends"} />
+          <SearchBox changeHandler={this.onSearchChange} />
+          <CardList robots={this.state.filteredRobots} />
+        </div>
+      );
+    }
   }
+
+  // component did mount method ----------------------------------------------------------------------------------------
+
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(users => this.setState({filteredRobots: users}));
+  }
+
+// root component class ends -------------------------------------------------------------------------------------------
+
 }
 
 // exports #############################################################################################################
