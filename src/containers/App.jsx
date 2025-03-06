@@ -5,9 +5,10 @@
 // imports -------------------------------------------------------------------------------------------------------------
 
 import React from "react";
-import {robots} from "./robots.js";
+// import {robots} from "./robots.js";
 import Hello from "../components/Hello.jsx";
 import SearchBox from "../components/SearchBox.jsx";
+import Scroll from "../components/Scroll.jsx";
 import CardList from "../components/CardList.jsx";
 
 // root component class ################################################################################################
@@ -18,22 +19,25 @@ class App extends React.Component {
 
   constructor() {
     super();
-    this.state = {filteredRobots: []}
+    this.allRoborts = null;
+    this.state = {filteredRobots: []};
     this.onSearchChange = this.onSearchChange.bind(this);
   }
 
   // search change event handler ---------------------------------------------------------------------------------------
 
   onSearchChange(event) {
-    this.setState(
-      {filteredRobots: robots.filter(robot => robot.name.toLowerCase().includes(event.target.value.toLowerCase()))}
-    );
+    this.setState({
+      filteredRobots: this.allRoborts.filter(
+        robot => robot.name.toLowerCase().includes(event.target.value.toLowerCase())
+      )
+    });
   }
 
   // render method -----------------------------------------------------------------------------------------------------
 
   render() {
-    if (this.state.filteredRobots.length === 0) {
+    if (this.allRoborts === null) {
       return (
         <div>
           <Hello title={"Loading..."} />
@@ -44,7 +48,7 @@ class App extends React.Component {
         <div>
           <Hello title={"RoboFriends"} />
           <SearchBox changeHandler={this.onSearchChange} />
-          <CardList robots={this.state.filteredRobots} />
+          <Scroll><CardList robots={this.state.filteredRobots} /></Scroll>
         </div>
       );
     }
@@ -56,6 +60,8 @@ class App extends React.Component {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then(response => response.json())
       .then(users => this.setState({filteredRobots: users}));
+    // console.log(this.state.filteredRobots);
+    // this.allRoborts = this.state.filteredRobots;
   }
 
 // root component class ends -------------------------------------------------------------------------------------------

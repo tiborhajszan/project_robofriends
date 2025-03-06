@@ -1,0 +1,16 @@
+/*
+Zero To Mastery Academy
+Complete Web Developer in 2025: Zero to Mastery
+React :: RoboFriends Project :: Scroll Css
+*/
+
+.scroll {
+  height: calc(100vh - 18rem);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
