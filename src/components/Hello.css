@@ -5,14 +5,18 @@ React :: RoboFriends Project :: Hello Css
 */
 
 .hello {
-  padding: 4rem;
+  padding: 64px 0;
 }
+
+@media screen and (max-width: 425px) { .hello {
+  padding: 48px 0;
+}}
 
 @font-face {
   font-family: "SEGA LOGO FONT";
   font-style: normal;
   font-weight: normal;
-  src: local("SEGA LOGO FONT"), url("SEGA.woff") format("woff");
+  src: local("SEGA LOGO FONT"), url("./SEGA.woff") format("woff");
 }
 
 .hello > h1 {
@@ -20,6 +24,10 @@ React :: RoboFriends Project :: Hello Css
   text-align: center;
   font-family: "SEGA LOGO FONT";
   color: #0ccac4;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 200;
 }
+
+@media screen and (max-width: 425px) { .hello > h1 {
+  font-size: 32px;
+}}

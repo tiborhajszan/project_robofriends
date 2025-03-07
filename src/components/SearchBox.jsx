@@ -12,12 +12,7 @@ import "./SearchBox.css";
 function SearchBox(props) {
   return (
     <div className="search-box">
-      <input
-        className="ba b--green pa3 bg-lightest-blue"
-        type="search"
-        size="30"
-        placeholder="Search Robots by Name"
-        onChange={props.changeHandler} />
+      <input type="search" size="30" placeholder="Search Robots by Name" onChange={props.changeHandler} />
     </div>
   );
 }

@@ -19,28 +19,29 @@ class App extends React.Component {
 
   constructor() {
     super();
-    this.allRoborts = null;
-    this.state = {filteredRobots: []};
+    this.state = {
+      allRoborts: [],
+      listedRobots: [],
+    };
     this.onSearchChange = this.onSearchChange.bind(this);
   }
 
   // search change event handler ---------------------------------------------------------------------------------------
 
   onSearchChange(event) {
-    this.setState({
-      filteredRobots: this.allRoborts.filter(
-        robot => robot.name.toLowerCase().includes(event.target.value.toLowerCase())
-      )
-    });
+    const filteredRobots = this.state.allRoborts.filter(
+      robot => robot.name.toLowerCase().includes(event.target.value.toLowerCase())
+    );
+    this.setState({listedRobots: filteredRobots});
   }
 
   // render method -----------------------------------------------------------------------------------------------------
 
   render() {
-    if (this.allRoborts === null) {
+    if (this.state.allRoborts.length === 0) {
       return (
         <div>
-          <Hello title={"Loading..."} />
+          <Hello title={"Loading . . ."} />
         </div>
       );
     } else {
@@ -48,7 +49,7 @@ class App extends React.Component {
         <div>
           <Hello title={"RoboFriends"} />
           <SearchBox changeHandler={this.onSearchChange} />
-          <Scroll><CardList robots={this.state.filteredRobots} /></Scroll>
+          <Scroll><CardList robots={this.state.listedRobots} /></Scroll>
         </div>
       );
     }
@@ -59,10 +60,8 @@ class App extends React.Component {
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then(response => response.json())
-      .then(users => this.setState({filteredRobots: users}));
-    // console.log(this.state.filteredRobots);
-    // this.allRoborts = this.state.filteredRobots;
-  }
+      .then(users => this.setState({allRoborts: users, listedRobots: users}));
+}
 
 // root component class ends -------------------------------------------------------------------------------------------
 

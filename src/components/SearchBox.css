@@ -5,7 +5,15 @@ React :: RoboFriends Project :: Search Box Css
 */
 
 .search-box {
-  padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box > input {
+  border: 3px solid #19a974;
+  padding: 1rem;
+  background-color: #cdecff;
   text-align: center;
+  font-size: 1rem;
 }
