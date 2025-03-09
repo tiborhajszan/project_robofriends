@@ -4,16 +4,25 @@ Complete Web Developer in 2025: Zero to Mastery
 React :: RoboFriends Project :: Search Box Css
 */
 
+/* container styles ------------------------------------------------------------------------------------------------- */
+
 .search-box {
-  padding-bottom: 2rem;
+  padding-bottom: 48px;
   display: flex;
   justify-content: center;
 }
 
+/* input styles ----------------------------------------------------------------------------------------------------- */
+
 .search-box > input {
   border: 3px solid #19a974;
-  padding: 1rem;
+  padding: 10px;
   background-color: #cdecff;
   text-align: center;
-  font-size: 1rem;
+  font-size: 12px;
 }
+
+@media screen and (min-width: 425px) { .search-box > input {
+  padding: 16px;
+  font-size: 16px;
+}}

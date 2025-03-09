@@ -4,13 +4,13 @@ Complete Web Developer in 2025: Zero to Mastery
 React :: RoboFriends Project :: Hello Css
 */
 
+/* container styles ------------------------------------------------------------------------------------------------- */
+
 .hello {
-  padding: 64px 0;
+  padding: 48px 0;
 }
 
-@media screen and (max-width: 425px) { .hello {
-  padding: 48px 0;
-}}
+/* heading styles --------------------------------------------------------------------------------------------------- */
 
 @font-face {
   font-family: "SEGA LOGO FONT";
@@ -24,10 +24,10 @@ React :: RoboFriends Project :: Hello Css
   text-align: center;
   font-family: "SEGA LOGO FONT";
   color: #0ccac4;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 200;
 }
 
-@media screen and (max-width: 425px) { .hello > h1 {
-  font-size: 32px;
+@media screen and (min-width: 425px) { .hello > h1 {
+  font-size: 48px;
 }}
