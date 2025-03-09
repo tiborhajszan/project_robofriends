@@ -4,13 +4,78 @@ Complete Web Developer in 2025: Zero to Mastery
 React :: RoboFriends Project :: Card Css
 */
 
+/* card styles ------------------------------------------------------------------------------------------------------ */
+
 .card {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #9eebcf;
+  box-shadow: 3px 3px 8px 0 #9eebcf;
+  transition: transform 0.25s ease-out;
+}
+
+@media screen and (min-width: 425px) { .card {
+  width: 240px;
+  height: 340px;
+  margin: 0 10px 20px;
+  padding: 20px;
+}}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* image styles ----------------------------------------------------------------------------------------------------- */
+
+.img-box {
+  height: 100%;
+  margin-right: 10px;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 425px) { .img-box {
+  height: 200px;
+  margin-right: 0;
+  float: none;
+  display: block;
+}}
+
+.img-box > img {
+  width: 50px;
+}
+
+@media screen and (min-width: 425px) { .img-box > img {
+  width: 200px;
+}}
+
+/* text styles ------------------------------------------------------------------------------------------------------ */
+
+.text-box {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 240px;
-  margin: 0 10px 20px;
-  border-radius: 10px;
-  padding: 20px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 425px) { .text-box {
+  height: 100px;
+}}
+
+.text-box > h2, .text-box > p {
+  margin: 0;
+  font-size: 24px;
+  text-align: left;
+}
+
+@media screen and (min-width: 425px) { .text-box > h2, .text-box > p {
+  text-align: center;
+}}
+
+.text-box > p {
+  font-size: 16px;
 }

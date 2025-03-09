@@ -11,10 +11,14 @@ import "./Card.css";
 
 function Card(props) {
   return (
-    <div className="card bg-light-green shadow-5 grow">
-      <img src={`https://robohash.org/${props.id}?size=200x200`} alt={props.name} />
-      <h2 className="tc">{props.name}</h2>
-      <p className="tc">{props.email}</p>
+    <div className="card">
+      <div className="img-box">
+        <img src={`https://robohash.org/${props.id}?size=200x200`} alt={props.name} />
+      </div>
+      <div className="text-box">
+        <h2>{props.name}</h2>
+        <p>{props.email}</p>
+      </div>
     </div>
   );
 }

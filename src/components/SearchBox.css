@@ -16,13 +16,12 @@ React :: RoboFriends Project :: Search Box Css
 
 .search-box > input {
   border: 3px solid #19a974;
-  padding: 10px;
+  padding: 8px;
   background-color: #cdecff;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 425px) { .search-box > input {
   padding: 16px;
-  font-size: 16px;
 }}
