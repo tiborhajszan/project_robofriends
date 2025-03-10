@@ -4,9 +4,15 @@ Complete Web Developer in 2025: Zero to Mastery
 React :: RoboFriends Project :: Card List Css
 */
 
+/* card list styles ------------------------------------------------------------------------------------------------- */
+
 .card-list {
+  padding: 20px 20px 0;
+}
+
+@media only screen and (min-width: 512px) { .card-list {
+  padding: 20px 10px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 10px;
-}
+}}

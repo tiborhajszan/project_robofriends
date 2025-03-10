@@ -13,9 +13,7 @@ import Card from "./Card.jsx";
 function CardList(props) {
   return (
     <div className="card-list">{
-      props.robots.map(
-        user => {return <Card key={user.id} id={user.id} name={user.name} email={user.email} />}
-      )
+      props.robots.map(robot => {return <Card key={robot.id} id={robot.id} name={robot.name} email={robot.email} />})
     }</div>
   );
 }
