@@ -28,6 +28,6 @@ React :: RoboFriends Project :: Hello Css
   font-weight: 200;
 }
 
-@media screen and (min-width: 425px) { .hello > h1 {
+@media only screen and (min-width: 512px) { .hello > h1 {
   font-size: 48px;
 }}
