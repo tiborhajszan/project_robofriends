@@ -1,6 +1,6 @@
 // Zero To Mastery Academy
 // Complete Web Developer in 2025: Zero to Mastery
-// React :: RoboFriends Project :: Application Page
+// React :: RoboFriends Project :: Application Page Jsx
 
 // imports -------------------------------------------------------------------------------------------------------------
 
