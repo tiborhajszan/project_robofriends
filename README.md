@@ -2,9 +2,11 @@
 
 RoboFriends is a simple web application created during [The Complete Web Developer in 2025: Zero to Mastery](https://zerotomastery.io/courses/coding-bootcamp/) course. It is built using React and modern web technologies to ensure a smooth and responsive user experience.
 
+You can reach the web application here: RoboFriends
+
 ## Features
 
-- **Robot Listing**: Displays a list of robot friends with unique images and names. Each robot is dynamically fetched from an API and rendered on the page.
+- **Robot Listing**: Displays a list of robot friends with images, names and emails. Robot data is dynamically fetched from public APIs and rendered on the page.
 
 - **Search Functionality**: Users can search for specific robots by name using a search bar. The list of robots updates in real-time as the user types, making it easy to find the desired robot.
 
@@ -15,12 +17,6 @@ RoboFriends is a simple web application created during [The Complete Web Develop
 ## Getting Started
 
 To run the RoboFriends app locally, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/robofriends.git
-   cd robofriends
-   ```
 
 2. **Install dependencies**:
    ```bash
@@ -36,13 +32,9 @@ To run the RoboFriends app locally, follow these steps:
 
 ## Technologies Used
 
-- **React**: A JavaScript library for building user interfaces, enabling the creation of reusable UI components.
+- **React**: JavaScript library for building user interfaces with reusable UI components.
 - **CSS**: Styling language used to create a visually appealing and responsive design.
 - **RoboHash API**: A public API used to generate robot images based on a unique identifier.
-
-## Contributing
-
-We welcome contributions! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
 ## License
 
