@@ -4,15 +4,15 @@ RoboFriends is a simple web application that I created by following [The Complet
 
 You can reach my web application here: [RoboFriends](https://tiborhajszan.github.io/project_robofriends/)
 
-For comparison, you can check out the original RoboFriends project by ZtM here: [Project GitHub](https://github.com/aneagoie/robofriends-latest)
+For comparison, you can check out the original RoboFriends project by ZtM here: [ZtM RoboFriends GitHub](https://github.com/aneagoie/robofriends-latest)
 
 ## Features
 
-- **Robot Listing**: Displays a list of robot friends with images, names and emails. Robot data is dynamically fetched from public APIs and rendered on the page.
+**Robot Listing**: Displays a list of robot friends with images, names and emails. Robot data is dynamically fetched from public APIs and rendered on the page.
 
-- **Search Functionality**: Users can search for specific robots by name using a search bar. The list of robots updates in real-time as the user types.
+**Search Functionality**: Users can search for specific robots by name using a search bar. The list of robots updates in real-time as the user types.
 
-- **Responsive Design**: The application is designed to be fully responsive, ensuring a seamless experience across desktop, tablet, and mobile devices.
+**Responsive Design**: The original ZtM application was not responsive, so I rebuilt RoboFriends to be fully responsive, ensuring a seamless experience across desktop and mobile devices. I created an alternate design for small screeens, adapting breakpoints to the content.
 
 - **Dynamic API Integration**: The app fetches robot data from a public API, ensuring that the information is always up-to-date and fresh.
 
@@ -20,12 +20,7 @@ For comparison, you can check out the original RoboFriends project by ZtM here: 
 
 To run the RoboFriends app locally, follow these steps:
 
-3. **Run the development server**:
-   ```bash
-   npm start
-   ```
-
-4. Open your browser and navigate to `http://localhost:3000` to see the app in action.
+Open your browser and navigate to `http://localhost:3000` to see the app in action.
 
 ## Technologies Used
 
