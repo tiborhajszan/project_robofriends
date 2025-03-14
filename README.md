@@ -14,18 +14,10 @@ For comparison, you can check out the original RoboFriends project by ZtM here: 
 
 **Responsive Design**: The original ZtM application was not responsive, so I rebuilt RoboFriends to be fully responsive, ensuring a seamless experience across desktop and mobile devices. I created an alternate design for small screeens, adapting breakpoints to the content.
 
-- **Dynamic API Integration**: The app fetches robot data from a public API, ensuring that the information is always up-to-date and fresh.
-
-## Getting Started
-
-To run the RoboFriends app locally, follow these steps:
-
-Open your browser and navigate to `http://localhost:3000` to see the app in action.
-
 ## Technologies Used
 
 - **React**: JavaScript library for building user interfaces with reusable UI components.
-- **CSS**: Webpage styling language for creating visually appealing and responsive design.
+- **CSS**: Styling language for creating visually appealing and responsive webpage design.
 - **RoboHash API**: A public API used to generate robot images based on a unique identifier.
 
 ## License
